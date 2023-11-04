@@ -10,7 +10,7 @@ const NavBar = () => {
         <div className="bg-base-100 rounded-lg shadow-lg my-10 mx-10 px-5">
             <nav className="flex md:flex-row  flex-col  justify-between items-center py-7">
                {/* <Logo></Logo> */}
-               <h2 className="text-green-600">Resturent Management Website</h2>
+               <h2 className="text-lime-600">Resturent Management Website</h2>
                 <ul className="flex gap-5">
                     <li>
                         
