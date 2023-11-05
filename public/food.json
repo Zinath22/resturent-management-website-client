@@ -1,0 +1,61 @@
+[
+    {
+      
+      "food_name": "Spicy Chicken Tacos",
+      "food_img": "https://i.ibb.co/j3X1W5G/tacos.jpg",
+      "food_category": "Mexican",
+      "food_origin": "Bd",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 9.99
+    },
+    {
+     
+      "food_name": "Margherita Pizza",
+      "food_img": "https://i.ibb.co/QMgyyH3/pizza.jpg",
+      "food_category": "Italian",
+      "food_origin": "Bd",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 12.99
+    },
+    {
+      
+      "food_name": "Sushi Platter",
+      "food_img": "https://i.ibb.co/hY1PrRH/sushi-platter-1.jpg",
+      "food_category": "Japanese",
+      "food_origin": "Bd",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 16.49
+    },
+    {
+     
+      "food_name": "Burger and Fries",
+      "food_img": "https://i.ibb.co/nBqn2Lw/bb.jpg",
+      "food_category": "American",
+      "food_origin": "Bd",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 8.99
+    },
+    {
+      
+      "food_name": "Vegetable Stir-Fry",
+      "food_img": "https://i.ibb.co/KNymt7P/stir-fry.jpg",
+      "food_category": "Chinese",
+      "food_origin": "Bd",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 10.99
+    },
+
+    {
+     
+      "food_name": "Chocolate Brownie Sundae",
+      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
+      "food_category": "Dessert",
+      "food_origin": "Bd",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 6.99
+    }
+    
+
+  ]
+
+  
