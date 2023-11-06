@@ -134,6 +134,8 @@ return (
           </a>
         </li>
         <Link to={'/addfood'}><li>Add Food</li></Link>
+        <Link to={'/myAddFoodItem'}><li>My Add Food</li></Link>
+
         <li onClick={handleSignOut}><a>Logout</a></li>
       </ul>
     </div>

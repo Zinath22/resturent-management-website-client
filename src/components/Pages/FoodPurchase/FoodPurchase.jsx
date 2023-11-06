@@ -1,6 +1,7 @@
-import React, { useContext } from "react"; // Import React
+import  { useContext } from "react"; // Import React
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const FoodPurchase = () => {
     const { user } = useContext(AuthContext);
@@ -14,7 +15,7 @@ const FoodPurchase = () => {
         const orderdbyName = user.displayName; // Use 'user.displayName' directly
         const foodName = food_name; // Use 'food_name' directly
         const date = e.target.date.value;
-        const quantity = e.target.quantity.value;
+        const quantity = e.target.quantity;
 
         const purchaseData = {
             food_name: foodName, // Use 'foodName' instead of 'food_name'
@@ -26,6 +27,26 @@ const FoodPurchase = () => {
             quantity,
         };
         console.log(purchaseData);
+
+        fetch('http://localhost:5000/purchase', {
+            method: 'POST',
+            headers: {
+          'content-type': 'application/json'
+
+            },
+            body: JSON.stringify(purchaseData)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if(data.insertedId){
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Your purchase successfull",
+                    icon: "success"
+                  });
+            }
+        })
     };
 
     return (
@@ -78,7 +99,7 @@ const FoodPurchase = () => {
                 </div>
 
                 <div className="form-control mt-6">
-                    <input className="btn btn-primary btn-block" type="submit" value="Order Confirm" />
+                    <input className="btn btn-primary btn-block" type="submit" value="Purchase" />
                 </div>
             </form>
             <div className="card-body"></div>
