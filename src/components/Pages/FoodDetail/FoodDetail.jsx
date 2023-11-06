@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 // import FoodDetailsCard from "./FoodDetailsCard";
@@ -10,6 +10,8 @@ const FoodDetail = () => {
  console.log(details);
  
     const food = useLoaderData();
+
+    const {_id } = food
   console.log(food);
 
     // const { food_name, food_img, food_category, price } = food;
@@ -38,9 +40,11 @@ const FoodDetail = () => {
     <h2 className="card-title">{food.food_name}</h2>
     <h2 className="card-title">{food.food_category}</h2>
     <p>{food.price}</p>
-    <p>{food.description}</p>
+    <p>{food.food_description}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Order</button>
+   <Link to={`/purchase/${_id}`}>
+   <button className="btn btn-primary">Order</button>
+   </Link>
     </div>
   </div>
 </div>

@@ -6,6 +6,8 @@ import Register from "../Register/Register";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import AllFoodItem from "../Pages/AllFoodItem/AllFoodItem";
 import FoodDetail from "../Pages/FoodDetail/FoodDetail";
+import FoodPurchase from "../Pages/FoodPurchase/FoodPurchase";
+import AddFood from "../Pages/AddFood/AddFood";
 
 
 const Routes = createBrowserRouter([
@@ -27,6 +29,15 @@ const Routes = createBrowserRouter([
           path: '/details/:id',
           element: <FoodDetail></FoodDetail>,
           loader: ({params}) => fetch(`http://localhost:5000/allFood/${params.id}`)
+        },
+        {
+          path: '/purchase/:id',
+          element: <FoodPurchase></FoodPurchase>,
+          loader: ({params}) => fetch(`http://localhost:5000/allFood/${params.id}`)
+        },
+        {
+          path: '/addfood',
+          element: <AddFood></AddFood>
         },
         {
             path: '/login',
