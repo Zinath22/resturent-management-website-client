@@ -4,13 +4,16 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+console.log('hh',import.meta.env.VITE_PASS)
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBTQo2AEDt25xVeAmYytNMRfmPYVYWf3Bw",
-  authDomain: "cosmetics-and-beauty-shop.firebaseapp.com",
-  projectId: "cosmetics-and-beauty-shop",
-  storageBucket: "cosmetics-and-beauty-shop.appspot.com",
-  messagingSenderId: "51463620157",
-  appId: "1:51463620157:web:b9b8ed03f73a3742d74c54"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain:import.meta.env.VITE_PROJECTID,
+  projectId:import.meta.env.VITE_STORAGEBUCKET,
+  storageBucket:import.meta.env.VITE_AUTHDOMAIN,
+  messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID,
+  appId:import.meta.env.VITE_APPID
 };
 
 // Initialize Firebase
