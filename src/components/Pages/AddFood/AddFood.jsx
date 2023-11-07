@@ -41,7 +41,7 @@ import Swal from "sweetalert2";
 // //     return (
 // //         <div>
 // //             <div className="px-10">
-          
+
 // //           <div className="md:w-full rounded-lg my-7 bg-gradient-to-r from-sky-400 to-gray-400 p-24">
 // //          <h2 className="text-3xl text-white justify-center text-center font-extrabold">Add a New Food</h2>
 // //          <form onSubmit={handleAddFood} >
@@ -361,7 +361,7 @@ import Swal from "sweetalert2";
 
 const AddFood = () => {
 
-    const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
     const handleAddFood = event => {
         event.preventDefault();
 
@@ -402,17 +402,17 @@ const AddFood = () => {
             .then(data => {
                 console.log(data);
 
-                if(data.insertedId){
+                if (data.insertedId) {
                     Swal.fire({
                         title: ' Success',
                         text: 'Product addedd successfully',
                         icon: 'success',
                         confirmButtonText: 'OKk'
                     })
-                  }
+                }
             });
 
-           
+
     };
 
     return (
@@ -446,7 +446,7 @@ const AddFood = () => {
                                     <input
                                         type="text"
                                         name="food_category"
-                                        placeholder="Brand Name"
+                                        placeholder="Category Name"
                                         className="input input-bordered w-full"
                                     />
                                 </label>
@@ -512,33 +512,33 @@ const AddFood = () => {
                                 </label>
                             </div>
                         </div>
-                       <div className="flex md:flex-row flex-col gap-5">
-                       <div className="form-control md:w-1/2">
-                            <label className="label">
-                                <span className="label-text text-xl text-white">User Email</span>
-                            </label>
-                            <label className="input-group">
-                                <input
-                                    type="text"
-                                    name="added_by_email"
-                                    placeholder="User Email" defaultValue={user?.email} readOnly
-                                    className="input input-bordered text-xl w-full"
-                                />
-                            </label>
-                            
-                        </div>
+                        <div className="flex md:flex-row flex-col gap-5">
+                            <div className="form-control md:w-1/2">
+                                <label className="label">
+                                    <span className="label-text text-xl text-white">User Email</span>
+                                </label>
+                                <label className="input-group">
+                                    <input
+                                        type="text"
+                                        name="added_by_email"
+                                        placeholder="User Email" defaultValue={user?.email} readOnly
+                                        className="input input-bordered text-xl w-full"
+                                    />
+                                </label>
 
-                        <div className="form-control w-full md:w-1/2 ">
- <label className="label">
-<span className="label-text text-xl">Food Origin</span>
-</label>
-<label className="input-group">
+                            </div>
 
- <input type="text" name="food_origin" placeholder="Food origin" className="input input-bordered w-full" />
-</label>
- </div>
+                            <div className="form-control w-full md:w-1/2 ">
+                                <label className="label">
+                                    <span className="label-text text-xl">Food Origin</span>
+                                </label>
+                                <label className="input-group">
 
-                        {/* <div className="form-control w-full md:w-1/2">
+                                    <input type="text" name="food_origin" placeholder="Food origin" className="input input-bordered w-full" />
+                                </label>
+                            </div>
+
+                            {/* <div className="form-control w-full md:w-1/2">
                             <label className="label">
                                 <span className="label-text text-xl text-white">Photo URL</span>
                             </label>
@@ -552,8 +552,8 @@ const AddFood = () => {
                             </label>
                             
                         </div> */}
-                       </div>
-                       <div className="form-control w-full">
+                        </div>
+                        <div className="form-control w-full">
                             <label className="label">
                                 <span className="label-text text-xl text-white">Photo URL</span>
                             </label>
@@ -565,9 +565,9 @@ const AddFood = () => {
                                     className="input input-bordered text-xl w-full"
                                 />
                             </label>
-                            
+
                         </div>
-                       <input
+                        <input
                             type="submit"
                             value="Add products"
                             className="mt-2 btn btn-block text-white bg-gradient-to-r from-gray-400 to-sky-400"

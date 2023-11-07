@@ -2,6 +2,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import Logo from "./Logo";
 // import Logo from "../Logo/Logo";
 
 
@@ -77,8 +78,8 @@ const Navbar = () => {
 
 return (
     <div className="">
-        <div className="rounded-lg flex justify-between items-center py-5 mx-10 px-10 shadow-lg">
-   {/* <Logo></Logo> */}
+        <div className="rounded-lg flex justify-between items-center py-5 mx-10 px-10 shadow-lg ">
+   <Logo></Logo>
   {/* <img className="w-[60px] rounded-full" src="https://i.ibb.co/ckTTpcX/laura-chouette-bz-PJm3v8-RWk-unsplash-1.jpg" alt="" /> */}
  <h2 className="text-lime-500 text-2xl hidden md:inline-block" >Resturent</h2>
 

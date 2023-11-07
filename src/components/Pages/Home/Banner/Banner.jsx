@@ -10,6 +10,8 @@ const Banner = () => {
 
     return (
         <div>
+          
+
             <div className="carousel mx-10 h-[600px]">
   <div id="slide1" className="carousel-item relative w-full">
     <img src={img1} className="w-full rounded-lg" />
@@ -20,10 +22,7 @@ const Banner = () => {
 
         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
 
-        {/* <div className=''>
-            <button className='btn btn-primary mr-5'>Discover More</button>
-            <button className='btn btn-outline btn-secondary'>Latest Project</button>
-        </div> */}
+       
      </div>
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
@@ -40,10 +39,7 @@ const Banner = () => {
 
     <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
 
-    {/* <div className=''>
-        <button className='btn btn-primary mr-5'>Discover More</button>
-        <button className='btn btn-outline btn-secondary'>Latest Project</button>
-    </div> */}
+   
  </div>
 </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
@@ -60,10 +56,7 @@ const Banner = () => {
 
     <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
 
-    {/* <div className=''>
-        <button className='btn btn-primary mr-5'>Discover More</button>
-        <button className='btn btn-outline btn-secondary'>Latest Project</button>
-    </div> */}
+   
  </div>
 </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
@@ -80,10 +73,7 @@ const Banner = () => {
 
     <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
 
-    {/* <div className=''>
-        <button className='btn btn-primary mr-5'>Discover More</button>
-        <button className='btn btn-outline btn-secondary'>Latest Project</button>
-    </div> */}
+   
  </div>
 </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
