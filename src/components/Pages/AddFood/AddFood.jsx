@@ -7,6 +7,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 
 // //         const form = event.target;
@@ -417,6 +418,11 @@ const AddFood = () => {
 
     return (
         <div>
+            <Helmet>
+               <title>
+               FoodLove | Add Food
+               </title>
+            </Helmet>
             <div className="px-10">
                 <div className="md:w-full rounded-lg my-7 bg-gradient-to-r from-sky-400 to-gray-400 p-24">
                     <h2 className="text-3xl text-white justify-center text-center font-extrabold">

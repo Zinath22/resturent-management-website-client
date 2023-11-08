@@ -1,11 +1,14 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import { useLoaderData } from "react-router-dom";
 
 
 const Update = () => {
     
-        const {_id, user } = useContext(AuthContext)
+        const { user } = useContext(AuthContext)
+        const food = useLoaderData()
+        console.log(food);
         const handleUpdateFood = event => {
             event.preventDefault();
      
@@ -36,7 +39,7 @@ const Update = () => {
             console.log(updateFood);
     
             // send data to the server
-            fetch(`http://localhost:5000/allFood/${_id}`, {
+            fetch(`http://localhost:5000/allFood/${food._id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json', // Fix content-type

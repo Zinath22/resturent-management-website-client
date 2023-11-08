@@ -1,97 +1,98 @@
 import { useEffect, useState } from "react";
 import AllFoodItemCard from "./allFoodItemCard";
 import { useLoaderData } from "react-router-dom";
+import './allfood.css';
 
-
-
-const AllFoodItem = ({input, inputValue,food_name}) => {
+const AllFoodItem = () => {
     const [allItem, setAllItem] = useState([]);
     const [currentPage, setCurrentPage] = useState(0);
     const [itemPerPage, setItemPerPage] = useState(9);
+    const [searchQuery, setSearchQuery] = useState(""); // Step 1: Add search query state
     const count = useLoaderData();
-    
-//   console.log(count.count, itemPerPage);
+
     const numberOfPages = Math.ceil(count.count / itemPerPage);
-//    console.log(numberOfPages)
-    // const pages = []
-    // for(let i = 0; i < numberOfPages; i++){
-    //     pages.push(i)
-    // }
+    const pages = [...Array(numberOfPages).keys()];
 
-    // console.log(pages)
-
-    const pages = [...Array(numberOfPages).keys()]
-
-    useEffect( () => {
+    useEffect(() => {
         fetch(`http://localhost:5000/allFood?page=${currentPage}&size=${itemPerPage}`)
-        .then(res => res.json())
-        .then(data => setAllItem(data))
+            .then((res) => res.json())
+            .then((data) => setAllItem(data));
     }, [currentPage, itemPerPage]);
-   
 
-    const handleItemPerPage = e => {
+    const handleItemPerPage = (e) => {
         const val = parseInt(e.target.value);
-        console.log(val);
         setItemPerPage(val);
         setCurrentPage(0);
     }
 
-    const handlePrev = () =>{
-        if(currentPage > 0){
+    const handlePrev = () => {
+        if (currentPage > 0) {
             setCurrentPage(currentPage - 1);
         }
     }
 
-    const handleNext = () =>{
-        if(currentPage < pages.length){
+    const handleNext = () => {
+        if (currentPage < pages.length) {
             setCurrentPage(currentPage + 1);
         }
     }
 
+    // Step 2: Create a function to handle search input changes
+    const handleSearchChange = (e) => {
+        setSearchQuery(e.target.value);
+    };
+
+    // Step 3: Filter the allItem array based on the search query
+    const filteredItems = allItem.filter((item) => {
+        return item.food_name.toLowerCase().includes(searchQuery.toLowerCase());
+    });
+
     return (
         <div>
-
-<div className="justify-center text-center relative z-20">
-          <input
-            className="ml-3 text-center mt-10 rounded-l-lg py-2"
-            type="text"
-            placeholder="Search Here...."
-            value={input}
-            onChange={inputValue}
-          />
-          <button
-            className="bg-[#FF444A] text-white rounded-r-lg border-l-0 py-2 px-4"
-            onClick={food_name}
-          >
-            Search
-          </button>
-        </div>
+            <div className="justify-center text-center relative z-20">
+                {/* Step 2: Add an input field for search */}
+              <div className="py-20 w-1/2 mx-auto">
+              <input
+                className="input input-secondary w-full p-2"
+                    type="text"
+                    placeholder="Search by food name"
+                    value={searchQuery}
+                    onChange={handleSearchChange}
+                />
+              </div>
+            </div>
             <div className="px-10 mt-7 mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-
-            {
-            allItem.map(item => <AllFoodItemCard key={item._id}
-             item={item}
-            ></AllFoodItemCard>)
-         }
+                {/* Step 4: Display the filtered results */}
+                {filteredItems.map((item) => (
+                    <AllFoodItemCard key={item._id} item={item}></AllFoodItemCard>
+                ))}
             </div>
             <div className="text-center  mb-10 px-10">
-                {/* <p>c.p: {currentPage}</p> */}
-                <button onClick={handlePrev}
-                className="btn mr-5"
-                >Prev</button>
-                {
-                    pages.map(page => <button className="btn mr-4" 
-                     onClick={() => setCurrentPage(page)}
-                    key={page}>{page}</button>)
-                }
-                <button onClick={handleNext} className="btn ">Next</button>
-                <select className="btn ml-5 " value={itemPerPage} onChange={handleItemPerPage} name="" id="">
+                <button onClick={handlePrev} className="btn mr-5">
+                    Prev
+                </button>
+                {pages.map((page) => (
+                    <button
+                        className="btn mr-4"
+                        onClick={() => setCurrentPage(page)}
+                        key={page}
+                    >
+                        {page}
+                    </button>
+                ))}
+                <button onClick={handleNext} className="btn">
+                    Next
+                </button>
+                <select
+                    className="btn ml-5"
+                    value={itemPerPage}
+                    onChange={handleItemPerPage}
+                >
                     <option value="9">9</option>
                     <option value="15">15</option>
                     <option value="8">8</option>
                 </select>
             </div>
-        
         </div>
     );
 };

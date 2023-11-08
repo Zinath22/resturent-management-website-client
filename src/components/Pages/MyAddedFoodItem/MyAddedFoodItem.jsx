@@ -346,7 +346,7 @@ const MyAddedFoodItem = () => {
             <p>Food Description: {food.food_description}</p>
             <p>Price: {food.price}</p>
             <div className='flex items-center justify-between'>
-              <Link to={'/update'}>
+              <Link to={`/update/${food._id}`}>
                 <button className="btn btn-secondary">Update</button>
               </Link>
               {/* <button onClick={() => handleDelete(food._id)} className='font-semibold flex justify-end cursor-pointer text-red-500'>X</button> */}

@@ -8,7 +8,7 @@ const TopFood = () => {
     const [foods, setFoods] = useState([]);
 
     useEffect( () => {
-    fetch('http://localhost:5000/allFood')
+    fetch('http://localhost:5000/purchase')
     .then(res => res.json())
     .then(data => setFoods(data))
     },[])
