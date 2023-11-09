@@ -14,7 +14,7 @@ const Contact = () => {
       <h1 className="text-2xl text-amber-500 mb-2" data-aos="flip-left">phone </h1>
       <p className="" data-aos="flip-left">+0999911</p>
       <h1 className="text-2xl text-amber-500" data-aos="flip-left">Email</h1>
-      <p className="" data-aos="flip-left">glamour@grace.com</p>
+      <p className="" data-aos="flip-left">food@love.com</p>
    </div>
     
   <div>

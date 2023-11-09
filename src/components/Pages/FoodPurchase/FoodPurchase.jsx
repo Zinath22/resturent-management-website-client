@@ -2,13 +2,14 @@ import { useContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const FoodPurchase = () => {
     const { user } = useContext(AuthContext);
     const purchase = useLoaderData();
-    const { food_name, food_img, food_category, price, quantity: availableQuantity } = purchase;
+    const {food_description,added_by_name,food_origin, food_name, food_img, food_category, price, quantity: availableQuantity } = purchase;
     const [foods, setFoods] = useState([]);
-
+console.log(foods);
     useEffect(() => {
         fetch('http://localhost:5000/allFood')
             .then(res => res.json())
@@ -53,6 +54,7 @@ const FoodPurchase = () => {
             food_img,
             price,
             quantity: quantityToPurchase,
+            food_description,added_by_name,food_origin
         };
 
         console.log(purchaseData);
@@ -79,6 +81,9 @@ const FoodPurchase = () => {
 
     return (
         <div className="w-2/3 mx-auto">
+            <Helmet>
+                <title>FoodLove | Purchase</title>
+            </Helmet>
             <h2 className='text-center text-3xl'>Food: {food_name}</h2>
             <form onSubmit={handlePurchase}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

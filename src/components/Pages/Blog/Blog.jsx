@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 
 
 const Blog = () => {
     return (
         <div className="px-10 md:py-12 space-y-4">
+            <Helmet>
+                <title>FoodLove | Blog</title>
+            </Helmet>
             <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200">
                 <div className="collapse-title text-xl font-medium">
                     What is One way data binding?

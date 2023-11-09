@@ -12,8 +12,8 @@ const Footer = () => {
     
   </nav>  */}
 <img className="w-[100px] h-[80px] rounded-full" src="https://i.ibb.co/vBKnv4V/food-love-restaurant-logo-for-sale.jpg" alt="" />
-  <h2 className="text-2xl text-white">Opening Hour : EveryDay 10am-11pm</h2>
-  <p className="text-white text-xl">Hotline: 09882256647</p>
+  <h2 className="text-2xl text-white" data-aos="flip-left">Opening Hour : EveryDay 10am-11pm</h2>
+  <p className="text-white text-xl" data-aos="flip-left">Hotline: 09882256647</p>
 
   <nav>
     <div className="grid grid-flow-col gap-4 ">
@@ -23,7 +23,7 @@ const Footer = () => {
     </div>
   </nav> 
   <aside>
-    <p className="">Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+    <p className="" data-aos="flip-left">Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
   </aside>
 </footer>
         </div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types';
 
 const FoodDetailsCard = ({detail}) => {
 
@@ -13,6 +13,7 @@ const FoodDetailsCard = ({detail}) => {
   <div className="card-body">
     <h2 className="card-title">{food_name}</h2>
     <h2 className="card-title">{food_category}</h2>
+    <h2 className="card-title">{food_origin}</h2>
     <p className="bg-red-400 text-white">{food_description}</p>
     <p>{price}</p>
     <div className="card-actions justify-end">
@@ -23,5 +24,9 @@ const FoodDetailsCard = ({detail}) => {
         </div>
     );
 };
+FoodDetailsCard.propTypes = {
+  detail:PropTypes.object
+}
+
 
 export default FoodDetailsCard;

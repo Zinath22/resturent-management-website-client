@@ -6,6 +6,7 @@ import { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 
 const MyOrderPage = () => {
@@ -36,7 +37,7 @@ const MyOrderPage = () => {
     };
 
     fetchData();
-  }, [user.email]);
+  }, [user]);
 
  const handleDelete = _id =>{
   console.log(_id);
@@ -78,18 +79,22 @@ const MyOrderPage = () => {
 
   return (
     <div className='min-h-screen'>
-      <h2 className='text-center text-4xl my-10 text-cyan-600'>My ordered Food</h2>
+      <Helmet>
+                <title>FoodLove | MyOrderPage</title>
+            </Helmet>
+      <h2 className='text-center text-4xl my-10 text-amber-400'>My ordered Food</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-[80%] mx-auto'>
         {orderedFood.map((food) => (
           <div key={food._id} className='border p-6 space-y-2 rounded bg-cyan-100 shadow-xl'>
 
 
            
-            <img src={food.food_img} alt="" />
-            <p>Food Name: {food.food_name}</p>
-            <p>Food Category: {food.food_category}</p>
-            <p>Food Description: {food.food_description}</p>
-            <p>Price: {food.price}</p>
+            <img src={food.food_img} alt="" data-aos="flip-left"/>
+            <p className='text-amber-400 text-xl' data-aos="flip-left">{food.food_name}</p>
+            <p data-aos="flip-left">$ {food.price}</p>
+            <p data-aos="flip-left">Time: {food.date}</p>
+            
+         
             <div className='flex items-center justify-between'>
              
                 <button onClick={() => handleDelete(food._id)} className="btn btn-secondary bg-amber-400 text-black">Delete</button>

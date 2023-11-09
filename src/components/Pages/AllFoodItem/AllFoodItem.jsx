@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AllFoodItemCard from "./allFoodItemCard";
 import { useLoaderData } from "react-router-dom";
 import './allfood.css';
+import { Helmet } from "react-helmet-async";
 
 const AllFoodItem = () => {
     const [allItem, setAllItem] = useState([]);
@@ -50,8 +51,11 @@ const AllFoodItem = () => {
     return (
         <div>
             <div className="justify-center text-center relative z-20">
+            <Helmet>
+                <title> FoodLove | All Food</title>
+            </Helmet>
                 {/* Step 2: Add an input field for search */}
-              <div className="py-20 w-1/2 mx-auto">
+              <div className="md:p-20 w-1/2 ">
               <input
                 className="input input-secondary w-full p-2"
                     type="text"
@@ -73,7 +77,7 @@ const AllFoodItem = () => {
                 </button>
                 {pages.map((page) => (
                     <button
-                        className="btn mr-4"
+                        className={currentPage === page ? 'selected' : 'notSelected'}
                         onClick={() => setCurrentPage(page)}
                         key={page}
                     >

@@ -9,12 +9,8 @@ import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import Swal from 'sweetalert2';
-// import { useContext, useRef, useState } from "react";
-// import { Link, useLocation, useNavigate } from "react-router-dom";
-// import Swal from "sweetalert2"; // Import Swal instead of 'sweetalert'
-// import { getAuth, sendPasswordResetEmail } from "firebase/auth";
-// import app from "../../Firebase/firebase.config";
-// import { AuthContext } from "../../Providers/AuthProvider";
+
+
 
 const auth = getAuth(app);
 
@@ -71,8 +67,16 @@ const Login = () => {
   const handleGoogleLogin = () => {
     googleLogIn()
       .then((result) => {
+        // const loggedInUser = result.user
         console.log(result.user);
+        // const user = { email };
         navigate(location?.state ? location.state : "/");
+        // get access token 
+        // axios.post('http://localhost:5000/jwt', user)
+        // .then(res => {
+        //     console.log(res.data);
+        // })
+
       })
       .catch((error) => console.error(error));
   };

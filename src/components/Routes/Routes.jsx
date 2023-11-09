@@ -43,7 +43,7 @@ const Routes = createBrowserRouter([
         {
           path: '/topDetails/:id',
           element: <TopDetails></TopDetails>,
-          loader: ({params}) => fetch(`http://localhost:5000/allFood/${params.id}`)
+          loader: ({params}) => fetch(`http://localhost:5000/purchase/${params.id}`)
         },
         {
           path: '/purchase/:id',

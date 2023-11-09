@@ -1,39 +1,23 @@
 [
     {
         "_id": "1",
-        "img": "https://i.ibb.co/LkBd5sr/f.webp",
-        "name": "Luxury Suites",
+        "img": "https://i.ibb.co/Wk7Rxfk/thumbnail-Penne-Pasta-with-Tomato-Sauce-scaled.jpg",
+        "name": "Pasta",
         "rating": 4.9
       },
     {
         "_id": "2",
-        "img": "https://i.ibb.co/LkBd5sr/f.webp",
-        "name": "Luxury Suites",
-        "rating": 4.9
+        "img": "https://i.ibb.co/JBZ39hc/corn-Copy.webp",
+        "name": "Corn Soup",
+        "rating": 4.2
       },
     {
         "_id": "3",
-        "img": "https://i.ibb.co/mFZsWMr/download.jpg",
-        "name": "Luxury Suites",
-        "rating": 4.9
-      },
-    {
-        "_id": "4",
-        "img": "https://i.ibb.co/r5FmbHM/food-200702-nibby-600x411.jpg",
-        "name": "Luxury Suites",
-        "rating": 4.9
-      },
-    {
-        "_id": "5",
-        "img": "https://i.ibb.co/xJz3fyg/maxresdefault.jpg",
-        "name": "Luxury Suites",
-        "rating": 4.9
-      },
-    {
-        "_id": "6",
-        "img": "https://i.ibb.co/ZXjFG3Z/triple-chocolate-trifle2-1670273710.jpg",
-        "name": "Luxury Suites",
+        "img": "https://i.ibb.co/jJPYnxc/chicken-biryani-benefits-main-Copy.jpg",
+        "name": "Biriyani",
         "rating": 4.9
       }
+   
+    
     
 ]

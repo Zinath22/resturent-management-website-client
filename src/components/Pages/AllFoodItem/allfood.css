@@ -1,0 +1,13 @@
+.selected{
+    background-color: #FF9900;
+    padding: 10px;
+    gap: 4px;
+    /* margin-right: 8px; */
+    border-radius: 8px;
+
+    
+}
+
+.notSelected{
+    padding: 10px;
+}
