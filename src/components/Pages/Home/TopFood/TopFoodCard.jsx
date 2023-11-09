@@ -21,7 +21,7 @@ const TopFoodCard = ({food}) => {
                 
                 <div className="card-actions">
                    
-                        <Link to={`/details/${_id}`}><button className="btn  btn-accent bg-amber-400 text-black">Show Details</button></Link>
+                        <Link to={`/topDetails/${_id}`}><button className="btn  btn-accent bg-amber-400 text-black">Show Details</button></Link>
                     
                 </div>
             </div>

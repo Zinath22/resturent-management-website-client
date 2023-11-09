@@ -293,44 +293,6 @@ const MyAddedFoodItem = () => {
     fetchData();
   }, [user.email]);
 
-//   const handleDelete = (id) => {
-//     Swal.fire({
-//       title: 'Are you sure?',
-//       text: "You won't be able to revert this!",
-//       icon: 'warning',
-//       showCancelButton: true,
-//       confirmButtonColor: '#3085d6',
-//       cancelButtonColor: '#d33',
-//       confirmButtonText: 'Yes, delete it!',
-//       allowOutsideClick: false,
-//       showLoaderOnConfirm: true,
-
-//       preConfirm: () => {
-//         return fetch(`http://localhost:5000/allFood/${id}`, {
-//           method: 'DELETE'
-//         })
-//           .then((res) => res.json())
-//           .then((data) => {
-//             if (data.deletedCount > 0) {
-//               const remainingPostedJobs = addedFood.filter((food) => food._id !== id);
-//               setAddedFood(remainingPostedJobs);
-//               return data;
-//             } else {
-//               throw new Error('Failed to delete the bid.');
-//             }
-//           })
-//           .catch((error) => {
-//             Swal.showValidationMessage(`Error: ${error.message}`);
-//           });
-//       },
-//     })
-//       .then((result) => {
-//         if (result.value) {
-//           Swal.fire('Deleted!', 'Your bid has been deleted.', 'success');
-//         }
-//       });
-//   };
-
   return (
     <div className='min-h-screen'>
       <h2 className='text-center text-4xl my-10 text-cyan-600'>My Added Food</h2>

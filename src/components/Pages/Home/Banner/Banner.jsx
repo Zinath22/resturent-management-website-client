@@ -16,11 +16,11 @@ const Banner = () => {
   <div id="slide1" className="carousel-item relative w-full">
     <img src={img1} className="w-full rounded-lg" />
 
-    <div className="absolute flex items-center h-full  rounded-lg   top-0 bottom-0   bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+    <div className="absolute flex items-center  h-full  rounded-lg   top-0 bottom-0   bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
      <div className='text-white '>
         {/* <h2 className='text-6xl font-bold'>Life is uncertain. Eat delious food fast</h2> */}
 
-        <p className='text-center  items-center'>There are many variations of food.please visit our resturent</p>
+        <p className='text-center text-2xl  items-center'>There are many variations of food.please visit our resturent <br /> and Eat delious food fast.</p>
 
        
      </div>
@@ -35,9 +35,9 @@ const Banner = () => {
 
 <div className="absolute flex items-center h-full  rounded-lg   top-0 bottom-0   bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
  <div className='text-white space-y-7 pl-12 w-1/2'>
-    <h2 className='text-6xl font-bold'>Life is uncertain. Eat delious food fast</h2>
+    
 
-    <p>There are many variations of food.please visit our resturent</p>
+    <p className='text-2xl'>There are many variations of food.please visit our resturent <br /> and Eat delious food fast.</p>
 
    
  </div>
@@ -52,9 +52,9 @@ const Banner = () => {
 
 <div className="absolute flex items-center h-full  rounded-lg   top-0 bottom-0   bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
  <div className='text-white space-y-7 pl-12 w-1/2'>
-    <h2 className='text-6xl font-bold'>Life is uncertain. Eat delious food fast</h2>
+  
 
-    <p>There are many variations of food.please visit our resturent</p>
+    <p className=''>There are many variations of food.please visit our resturent <br /> and Eat delious food fast.</p>
 
    
  </div>
@@ -69,9 +69,9 @@ const Banner = () => {
 
 <div className="absolute flex items-center h-full  rounded-lg   top-0 bottom-0   bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
  <div className='text-white space-y-7 pl-12 w-1/2'>
-    <h2 className='text-6xl font-bold'>Life is uncertain. Eat delious food fast</h2>
+   
 
-    <p>There are many variations of food.please visit our resturent</p>
+    <p className=''>There are many variations of food.please visit our resturent <br /> and Eat delious food fast.</p>
 
    
  </div>

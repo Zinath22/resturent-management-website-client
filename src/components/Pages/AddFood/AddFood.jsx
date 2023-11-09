@@ -8,13 +8,7 @@ const AddFood = () => {
     const { user } = useContext(AuthContext);
     const [quantity, setQuantity] = useState(1);
    
-  
-
-
-
     
-
-
     const handleAddFood = (event) => {
         event.preventDefault();
 
