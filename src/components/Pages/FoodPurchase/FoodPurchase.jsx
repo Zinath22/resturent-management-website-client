@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 const FoodPurchase = () => {
     const { user } = useContext(AuthContext);
     const purchase = useLoaderData();
-    const { food_name, food_category, price, quantity: availableQuantity } = purchase;
+    const { food_name, food_img, food_category, price, quantity: availableQuantity } = purchase;
     const [foods, setFoods] = useState([]);
 
     useEffect(() => {
@@ -19,7 +19,7 @@ const FoodPurchase = () => {
         e.preventDefault();
 
         const orderedByEmail = user.email;
-        const orderedByName = user.displayName;
+        const orderedByName = e.target.name.value;
         const foodName = food_name;
         const date = e.target.date.value;
         const quantityToPurchase = parseInt(e.target.quantity.value, 10);
@@ -50,6 +50,7 @@ const FoodPurchase = () => {
             orderedByEmail,
             orderedByName,
             date,
+            food_img,
             price,
             quantity: quantityToPurchase,
         };
@@ -92,7 +93,7 @@ const FoodPurchase = () => {
                         <label className="label">
                             <span className="label-text">Buyer Name</span>
                         </label>
-                        <input type="text" defaultValue={user.displayName} readOnly name="name" className="input input-bordered" />
+                        <input type="text"  name="name" className="input input-bordered" />
                     </div>
 
                     <div className="form-control">

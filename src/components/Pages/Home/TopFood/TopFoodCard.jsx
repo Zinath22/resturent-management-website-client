@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const TopFoodCard = ({food}) => {
-    const {_id, food_name, food_img, food_category, price} = food;
+    const {_id, food_name, food_img, food_category, price, quantity} = food;
 
 
     return (
@@ -16,6 +16,7 @@ const TopFoodCard = ({food}) => {
                 <h2 className="text-amber-400 card-title">{food_name}</h2>
                 <h2 className="text-amber-400 card-title">{food_category}</h2>
                 <p className="text-xl text-amber-400">Price: ${price}</p>
+                <p className="text-xl text-amber-400">Quantity: {quantity}</p>
                 {/* <p className="text-xl text-orange-500">email: {email}</p> */}
                 
                 <div className="card-actions">

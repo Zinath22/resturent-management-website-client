@@ -1,12 +1,20 @@
+
+
+import { getAuth, sendPasswordResetEmail } from 'firebase/auth';
+import { useContext } from 'react';
 import {  FaGoogle } from 'react-icons/fa';
-import { useContext, useRef, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import Swal from "sweetalert2"; // Import Swal instead of 'sweetalert'
-import { getAuth, sendPasswordResetEmail } from "firebase/auth";
-// import app from "../../Firebase/firebase.config";
-import app from "../firebase/firebase.config";
-// import { AuthContext } from "../../Providers/AuthProvider";
+import app from '../Firebase/firebase.config';
 import { AuthContext } from '../Providers/AuthProvider';
+import { useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useRef } from 'react';
+import Swal from 'sweetalert2';
+// import { useContext, useRef, useState } from "react";
+// import { Link, useLocation, useNavigate } from "react-router-dom";
+// import Swal from "sweetalert2"; // Import Swal instead of 'sweetalert'
+// import { getAuth, sendPasswordResetEmail } from "firebase/auth";
+// import app from "../../Firebase/firebase.config";
+// import { AuthContext } from "../../Providers/AuthProvider";
 
 const auth = getAuth(app);
 
@@ -100,10 +108,10 @@ const Login = () => {
 
   return (
     <div>
-      <p className="text-center text-red-600">{error}</p>
+      <p className="text-center text-amber-400">{error}</p>
       
           
-            <div className="lg:w-1/2 w-full  my-10 text-white font-bold mx-auto  py-10 px-12 bg-gradient-to-r from-purple-500 to-amber-500 ">
+            <div className="lg:w-1/2 w-full  my-10  font-bold mx-auto  py-10 px-12 bg-gradient-to-r from-purple-500 to-pink-500 ">
               <h2 className="text-3xl mb-4 text-center">Login</h2>
               <p className="mb-4 text-center">
                 Please Login For Quick Access
@@ -140,9 +148,9 @@ const Login = () => {
               <div className="divider">or</div>
               <div className="space-y-3">
               <button onClick={handleGoogleLogin}
-                 className=" btn-outline btn w-full bg-gradient-to-r  from-amber-500 to-purple-500  py-3 text-center rounded text-white" >
+                 className=" btn-outline btn w-full bg-gradient-to-r  from-pink-500 to-purple-500  py-3 text-center rounded text-white" >
                     <FaGoogle></FaGoogle>
-                  Login In With Google</button>
+                  Login In With Googleee</button>
               </div>
             </div>
          

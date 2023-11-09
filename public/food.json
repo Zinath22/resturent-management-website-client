@@ -57,8 +57,8 @@
 
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
+      "food_name": "Ice-Cream",
+      "food_img": "https://i.ibb.co/9cHRRsn/38f5d9f30b421d2098b5c63bc6f8238d-Copy.jpg",
       "food_category": "Dessert",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
@@ -66,233 +66,187 @@
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Biriyani",
+      "food_img": "https://i.ibb.co/jJPYnxc/chicken-biryani-benefits-main-Copy.jpg",
+      "food_category": "Rice",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Corn-Soup",
+      "food_img": "https://i.ibb.co/JBZ39hc/corn-Copy.webp",
+      "food_category": "Soup",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Chiken-Wings",
+      "food_img": "https://i.ibb.co/hZGfW1J/download-1.jpg",
+      "food_category": "Chiken",
+      "food_origin": "BD",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 6.99
+    },
+    {
+     
+      "food_name": "Fried-Rice",
+      "food_img": "https://i.ibb.co/G2P808S/download-3.jpg",
+      "food_category": "Rice",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Spicy-Wings",
+      "food_img": "https://i.ibb.co/hZGfW1J/download-1.jpg",
+      "food_category": "Chiken",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Special-Rice",
+      "food_img": "https://i.ibb.co/0ZLBNqZ/download-3-Copy.jpg",
+      "food_category": "Rice",
+      "food_origin": "Bd",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 8.99
+    },
+    {
+     
+      "food_name": "Chiken Pizza",
+      "food_img": "https://i.ibb.co/84jxpyt/download-6.jpg",
+      "food_category": "Fastfood",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Beef Pizza",
+      "food_img": "https://i.ibb.co/zRnXtFD/download-7.jpg",
+      "food_category": "FastFood",
+      "food_origin": "Bd",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 7.99
+    },
+    {
+     
+      "food_name": "Thai Soup",
+      "food_img": "https://i.ibb.co/YRpr9Sc/download-9.jpg",
+      "food_category": "Soup",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Normal Soup",
+      "food_img": "https://i.ibb.co/8KWBq5F/download-10.jpg",
+      "food_category": "Soup",
+      "food_origin": "Bd",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 5.99
+    },
+    {
+     
+      "food_name": "Baked-Momo",
+      "food_img": "https://i.ibb.co/Z2dxstp/download-11.jpg",
+      "food_category": "Momo",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
+      "food_name": "Soup-Momo",
+      "food_img": "https://i.ibb.co/mS5wsBf/download-13.jpg",
       "food_category": "Dessert",
+      "food_origin": "Momo",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 6.99
+    },
+    {
+     
+      "food_name": "Special_sandwise",
+      "food_img": "https://i.ibb.co/L8M6ZNK/download-14.jpg",
+      "food_category": "Sandwise",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Cheese-Sandwise",
+      "food_img": "https://i.ibb.co/GR2pMNc/download-15.jpg",
+      "food_category": "Sandwise",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Naga-burger",
+      "food_img": "https://i.ibb.co/3yRpCHw/download-16.jpg",
+      "food_category": "Burger",
+      "food_origin": "Bd",
+      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
+      "price": 6.99
+    },
+    
+    {
+     
+      "food_name": "Cheese-burger",
+      "food_img": "https://i.ibb.co/xhs4yt1/download-17.jpg",
+      "food_category": "Burger",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Fry-momo",
+      "food_img": "https://i.ibb.co/K53fcKK/images-2.jpg",
+      "food_category": "Momo",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Chiken-mashala",
+      "food_img": "https://i.ibb.co/wQTxpK3/images.jpg",
+      "food_category": "Chiken",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Nachoce",
+      "food_img": "https://i.ibb.co/G30bq9Q/na.webp",
+      "food_category": "Nachose",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     },
     {
      
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
-      "food_origin": "Bd",
-      "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
-      "price": 6.99
-    },
-    {
-     
-      "food_name": "Chocolate Brownie Sundae",
-      "added_by_name":"Kb",
-      "added_by_email":"k@b.com",
-      "orgin":"Bangladesh",
-      "quantity":"5",
-      "food_img": "https://i.ibb.co/JyjqQYx/desert.jpg",
-      "food_category": "Dessert",
+      "food_name": "Chiken-salad",
+      "food_img": "https://i.ibb.co/6gnrM5Q/png-transparent-china-chicken-pilaf-poster-restaurant-roast-chicken-dishes-food-animals-recipe.png",
+      "food_category": "chiken",
       "food_origin": "Bd",
       "food_description": "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant",
       "price": 6.99
     }
+    
+    
     
 
   ]
