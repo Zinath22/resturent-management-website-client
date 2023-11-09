@@ -15,7 +15,7 @@ const Review = () => {
     return (
         <div>
              <div className="py-10 mx-10  ">
-            <h1 className="mb-5 text-4xl text-red-500 font-semibold text-center" data-aos="flip-left"> Review</h1>
+            <h1 className="mb-5 text-4xl text-amber-500 font-semibold text-center" data-aos="flip-left"> Review</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {
                     reviews?.map(review =>(
@@ -26,10 +26,10 @@ const Review = () => {
     <img className="w-[320px] rounded-full h-[300px] mx-auto  " src={review.img} alt={review.name} />
   {/* </div> */}
   <div className="p-6 text-center">
-    <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+    <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-amber-400 antialiased">
       {review.name}
     </h4>
-    <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
+    <p className="block text-amber-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
       {review.rating}
     </p>
   </div>

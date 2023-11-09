@@ -38,13 +38,13 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-    <li className="text-lime-500">
+    <li className="text-amber-500">
         <NavLink to = "/">Home</NavLink>
     </li>
-    <li className="text-lime-500">
+    <li className="text-amber-500">
         <NavLink to = "/allFood">All Food Item</NavLink>
     </li>
-    <li className="text-lime-500">
+    <li className="text-amber-500">
         <NavLink to = "/blog">Blog</NavLink>
     </li>
     {/* <li className="text-purple-500">
@@ -69,7 +69,7 @@ const Navbar = () => {
         </li>
       )
     } */}
-    {user ? '' :   <li className="text-lime-500">
+    {user ? '' :   <li className="text-amber-500">
           <Link to = "/login">Login</Link>
         </li>}
     </>

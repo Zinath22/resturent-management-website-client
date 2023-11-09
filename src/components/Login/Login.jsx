@@ -103,7 +103,7 @@ const Login = () => {
       <p className="text-center text-red-600">{error}</p>
       
           
-            <div className="lg:w-1/2 w-full  my-10 text-white font-bold mx-auto  py-10 px-12 bg-gradient-to-r from-purple-500 to-pink-500 ">
+            <div className="lg:w-1/2 w-full  my-10 text-white font-bold mx-auto  py-10 px-12 bg-gradient-to-r from-purple-500 to-amber-500 ">
               <h2 className="text-3xl mb-4 text-center">Login</h2>
               <p className="mb-4 text-center">
                 Please Login For Quick Access
@@ -130,7 +130,7 @@ const Login = () => {
                 </div>
                 <div className="mt-5"></div>
                 <div className="mt-5">
-                <button className="w-full  bg-gradient-to-r from-pink-500 to-purple-500 py-3 text-center rounded text-white">Login Now</button>
+                <button className="w-full  bg-gradient-to-r from-amber-500 to-purple-500 py-3 text-center rounded text-white">Login Now</button>
                   <div className="flex text-sm justify-between items-center mt-5">
                     <p className="tmt-2">New To The Website? <Link to={'/register'}><span className="btn-link font-medium text-white">Register</span></Link></p>
                     <p className="btn-link cursor-pointer text-white" onClick={handleForgetPass}>Forgot password?</p>
@@ -140,7 +140,7 @@ const Login = () => {
               <div className="divider">or</div>
               <div className="space-y-3">
               <button onClick={handleGoogleLogin}
-                 className=" btn-outline btn w-full bg-gradient-to-r  from-pink-500 to-purple-500  py-3 text-center rounded text-white" >
+                 className=" btn-outline btn w-full bg-gradient-to-r  from-amber-500 to-purple-500  py-3 text-center rounded text-white" >
                     <FaGoogle></FaGoogle>
                   Login In With Google</button>
               </div>

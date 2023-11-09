@@ -117,7 +117,7 @@ const Register = () => {
                 <p className="text-center text-purple-500">{error}</p>
 
                 {/* Registration form */}
-                <div className="w-full lg:w-1/2 my-10 mx-auto py-11 px-12 text-white font-bold bg-gradient-to-r from-purple-500 to-pink-500">
+                <div className="w-full lg:w-1/2 my-10 mx-auto py-11 px-12 text-white font-bold bg-gradient-to-r from-purple-500 to-amber-500">
                     <h2 className="text-2xl text-center mb-4">Register</h2>
                     <p className="mb-4 text-lg text-center">Create your account.</p>
 
@@ -125,7 +125,7 @@ const Register = () => {
                         {/* Name input */}
                         <div className="mt-5">
                             <label className="label">
-                                <span className="label-text">Name</span>
+                                <span className="label-text text-black">Name</span>
                             </label>
                             <input
                                 type="text"
@@ -139,7 +139,7 @@ const Register = () => {
                         {/* Image URL input */}
                         <div className="mt-5">
                             <label className="label">
-                                <span className="label-text">Image URL</span>
+                                <span className="label-text text-black">Image URL</span>
                             </label>
                             <input
                                 type="text"
@@ -153,7 +153,7 @@ const Register = () => {
                         {/* Email input */}
                         <div className="mt-5">
                             <label className="label">
-                                <span className="label-text">Email</span>
+                                <span className="label-text text-black">Email</span>
                             </label>
                             <input
                                 type="email"
@@ -167,7 +167,7 @@ const Register = () => {
                         {/* Password input */}
                         <div className="mt-5">
                             <label className="label">
-                                <span className="label-text">Password</span>
+                                <span className="label-text text-black">Password</span>
                             </label>
                             <input
                                 type="password"
@@ -191,7 +191,7 @@ const Register = () => {
 
                         {/* Registration button */}
                         <div className="mt-5">
-                            <button className="w-full bg-gradient-to-r from-pink-500 to-purple-500 py-3 text-center rounded text-white">
+                            <button className="w-full bg-gradient-to-r from-amber-500 to-purple-500 py-3 text-center rounded text-white">
                                 Register Now
                             </button>
                             <p className="text-center mt-3">

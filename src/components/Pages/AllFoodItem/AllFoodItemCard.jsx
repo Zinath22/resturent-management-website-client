@@ -12,15 +12,15 @@ const AllFoodItemCard = ({item}) => {
                 <img src={food_img} alt="Shoes" className=" " />
             </figure>
             <div className="card-body">
-                <h2 className="card-title">{food_name}</h2>
-                <h2 className="card-title">{food_category}</h2>
-                <p className="text-xl text-orange-500">Price: ${price}</p>
-                <p className="text-xl text-orange-500">{quantity}</p>
+                <h2 className="text-amber-400 card-title">{food_name}</h2>
+                <h2 className="text-amber-400 card-title">{food_category}</h2>
+                <p className="text-xl text-amber-500">Price: ${price}</p>
+                <p className="text-xl text-amber-500">{quantity}</p>
                 {/* <p className="text-xl text-orange-500">email: {email}</p> */}
                 
                 <div className="card-actions">
                    
-                        <Link to={`/details/${_id}`}><button className="btn btn-primary">Show Details</button></Link>
+                        <Link to={`/details/${_id}`}><button className="btn btn-primary bg-amber-400 text-black">Show Details</button></Link>
                     
                 </div>
             </div>
