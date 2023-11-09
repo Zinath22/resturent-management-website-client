@@ -29,7 +29,7 @@ const Routes = createBrowserRouter([
         {
           path: '/allFood',
           element: <AllFoodItem></AllFoodItem>,
-          loader: () => fetch('http://localhost:5000/foodCount')
+          loader: () => fetch('https://resturent-management-website-server.vercel.app/foodCount')
         },
         {
           path: '/blog',
@@ -38,22 +38,22 @@ const Routes = createBrowserRouter([
         {
           path: '/details/:id',
           element: <PrivateRoute><FoodDetail></FoodDetail></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/allFood/${params.id}`)
+          loader: ({params}) => fetch(`https://resturent-management-website-server.vercel.app/allFood/${params.id}`)
         },
         {
           path: '/topDetails/:id',
           element: <TopDetails></TopDetails>,
-          loader: ({params}) => fetch(`http://localhost:5000/purchase/${params.id}`)
+          loader: ({params}) => fetch(`https://resturent-management-website-server.vercel.app/purchase/${params.id}`)
         },
         {
           path: '/purchase/:id',
           element: <FoodPurchase></FoodPurchase>,
-          loader: ({params}) => fetch(`http://localhost:5000/allFood/${params.id}`)
+          loader: ({params}) => fetch(`https://resturent-management-website-server.vercel.app/allFood/${params.id}`)
         },
         {
           path: '/addfood',
           element: <AddFood></AddFood>,
-          // loader: ({params}) => fetch(`http://localhost:5000/users/${params.id}`)
+          // loader: ({params}) => fetch(`https://resturent-management-website-server.vercel.app/users/${params.id}`)
           
         },
         {
@@ -63,7 +63,7 @@ const Routes = createBrowserRouter([
         {
           path: '/update/:id',
           element: <Update></Update>,
-          loader: ({params}) => fetch(`http://localhost:5000/allFood/${params.id}`)
+          loader: ({params}) => fetch(`https://resturent-management-website-server.vercel.app/allFood/${params.id}`)
         },
         {
             path: '/login',

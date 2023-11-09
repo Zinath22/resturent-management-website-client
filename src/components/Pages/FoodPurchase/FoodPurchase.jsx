@@ -11,7 +11,7 @@ const FoodPurchase = () => {
     const [foods, setFoods] = useState([]);
 console.log(foods);
     useEffect(() => {
-        fetch('http://localhost:5000/allFood')
+        fetch('https://resturent-management-website-server.vercel.app/allFood')
             .then(res => res.json())
             .then(data => setFoods(data))
     }, [])
@@ -59,7 +59,7 @@ console.log(foods);
 
         console.log(purchaseData);
 
-        fetch('http://localhost:5000/purchase', {
+        fetch('https://resturent-management-website-server.vercel.app/purchase', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

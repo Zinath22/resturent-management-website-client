@@ -21,7 +21,7 @@ const MyOrderPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/purchase');
+        const response = await axios.get('https://resturent-management-website-server.vercel.app/purchase');
         if (response.status !== 200) {
           throw new Error('Network response was not ok');
         }
@@ -58,7 +58,7 @@ const MyOrderPage = () => {
       //   icon: "success"
       // });
 
-      fetch(`http://localhost:5000/purchase/${_id}`, {
+      fetch(`https://resturent-management-website-server.vercel.app/purchase/${_id}`, {
         method: 'DELETE'
       })
 

@@ -39,7 +39,7 @@
 //         //     console.log(updateFood);
     
 //         //     // send data to the server
-//         //     fetch(`http://localhost:5000/allFood/${food._id}`, {
+//         //     fetch(`https://resturent-management-website-server.vercel.app/allFood/${food._id}`, {
 //         //         method: 'PUT',
 //         //         headers: {
 //         //             'Content-Type': 'application/json', // Fix content-type
@@ -274,7 +274,7 @@ const Update = () => {
         console.log(updateFood);
       
         axios
-        .put(`http://localhost:5000/allFood/${food._id}`, updateFood, {
+        .put(`https://resturent-management-website-server.vercel.app/allFood/${food._id}`, updateFood, {
           headers: {
             "Content-Type": "application/json",
           },

@@ -17,7 +17,7 @@ const MyAddedFoodItem = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/allFood');
+        const response = await axios.get('https://resturent-management-website-server.vercel.app/allFood');
         if (response.status !== 200) {
           throw new Error('Network response was not ok');
         }

@@ -15,7 +15,7 @@ const TopDetails = () => {
   console.log(food);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/allFood')
+        fetch('https://resturent-management-website-server.vercel.app/allFood')
         .then(res => res.json())
         .then(data => setDetails(data))
        },[])

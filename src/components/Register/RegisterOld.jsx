@@ -259,7 +259,7 @@ export default Register;
 //                 .then(() => {
 //                     // If account creation is successful, send user data to your backend
 //                     axios
-//                         .post("http://localhost:5000/users", newUser, {
+//                         .post("https://resturent-management-website-server.vercel.app/users", newUser, {
 //                             headers: {
 //                                 "Content-Type": "application/json",
 //                             },

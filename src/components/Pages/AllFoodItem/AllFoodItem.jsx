@@ -15,7 +15,7 @@ const AllFoodItem = () => {
     const pages = [...Array(numberOfPages).keys()];
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allFood?page=${currentPage}&size=${itemPerPage}`)
+        fetch(`https://resturent-management-website-server.vercel.app/allFood?page=${currentPage}&size=${itemPerPage}`)
             .then((res) => res.json())
             .then((data) => setAllItem(data));
     }, [currentPage, itemPerPage]);
