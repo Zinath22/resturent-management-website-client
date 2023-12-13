@@ -25,6 +25,15 @@ console.log(foods);
         const date = e.target.date.value;
         const quantityToPurchase = parseInt(e.target.quantity.value, 10);
 
+
+        if (quantityToPurchase > 20) {
+            Swal.fire({
+                title: "Quantity Limit Exceeded",
+                text: "You can't buy more than 20 items at a time.",
+                icon: "error",
+            });
+            return;
+        }
         // Check if the item is available
         if (availableQuantity == 0) {
             Swal.fire({
@@ -80,13 +89,13 @@ console.log(foods);
     };
 
     return (
-        <div className="w-2/3 mx-auto">
+        <div className="md:w-2/3 mx-auto">
             <Helmet>
                 <title>FoodLove | Purchase</title>
             </Helmet>
             <h2 className='text-center text-3xl'>Food: {food_name}</h2>
             <form onSubmit={handlePurchase}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Food Name</span>
@@ -98,7 +107,7 @@ console.log(foods);
                         <label className="label">
                             <span className="label-text">Buyer Name</span>
                         </label>
-                        <input type="text"  name="name" className="input input-bordered" />
+                        <input type="text"  name="name" defaultChecked={user.added_by_name} className="input input-bordered" />
                     </div>
 
                     <div className="form-control">
@@ -119,7 +128,7 @@ console.log(foods);
                         <label className="label">
                             <span className="label-text">Price</span>
                         </label>
-                        <input type="text" defaultValue={`$${price}`} readOnly className="input input-bordered" />
+                        <input type="text" defaultValue={price} readOnly className="input input-bordered" />
                     </div>
 
                     <div className="form-control">

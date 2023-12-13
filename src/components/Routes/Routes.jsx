@@ -42,27 +42,27 @@ const Routes = createBrowserRouter([
         },
         {
           path: '/topDetails/:id',
-          element: <TopDetails></TopDetails>,
+          element: <PrivateRoute><TopDetails></TopDetails></PrivateRoute>,
           loader: ({params}) => fetch(`https://resturent-management-website-server.vercel.app/purchase/${params.id}`)
         },
         {
           path: '/purchase/:id',
-          element: <FoodPurchase></FoodPurchase>,
+          element: <PrivateRoute><FoodPurchase></FoodPurchase></PrivateRoute>,
           loader: ({params}) => fetch(`https://resturent-management-website-server.vercel.app/allFood/${params.id}`)
         },
         {
           path: '/addfood',
-          element: <AddFood></AddFood>,
+          element: <PrivateRoute><AddFood></AddFood></PrivateRoute>,
           // loader: ({params}) => fetch(`https://resturent-management-website-server.vercel.app/users/${params.id}`)
           
         },
         {
           path: '/myAddFoodItem',
-          element: <MyAddedFoodItem></MyAddedFoodItem>
+          element: <PrivateRoute><MyAddedFoodItem></MyAddedFoodItem></PrivateRoute>
         },
         {
           path: '/update/:id',
-          element: <Update></Update>,
+          element: <PrivateRoute><Update></Update></PrivateRoute>,
           loader: ({params}) => fetch(`https://resturent-management-website-server.vercel.app/allFood/${params.id}`)
         },
         {
@@ -75,10 +75,12 @@ const Routes = createBrowserRouter([
         },
         {
           path:"/myOrder",
-          element: <MyOrderPage></MyOrderPage>
-        }
+          element: <PrivateRoute><MyOrderPage></MyOrderPage></PrivateRoute>
+        },
+        
       ]
     },
+    
   ]);
 
 export default Routes;

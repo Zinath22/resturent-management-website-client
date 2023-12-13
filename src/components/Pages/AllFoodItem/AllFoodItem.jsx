@@ -55,9 +55,9 @@ const AllFoodItem = () => {
                 <title> FoodLove | All Food</title>
             </Helmet>
                 {/* Step 2: Add an input field for search */}
-              <div className="md:p-20 w-1/2 ">
+              <div className="md:p-20 ml-14 w-1/2 ">
               <input
-                className="input input-secondary w-full p-2"
+                className="input input-secondary mt-20 w-full p-2"
                     type="text"
                     placeholder="Search by food name"
                     value={searchQuery}
@@ -65,7 +65,7 @@ const AllFoodItem = () => {
                 />
               </div>
             </div>
-            <div className="px-10 mt-7 mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="md:px-10 px-5 my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {/* Step 4: Display the filtered results */}
                 {filteredItems.map((item) => (
                     <AllFoodItemCard key={item._id} item={item}></AllFoodItemCard>
@@ -80,6 +80,7 @@ const AllFoodItem = () => {
                         className={currentPage === page ? 'selected' : 'notSelected'}
                         onClick={() => setCurrentPage(page)}
                         key={page}
+                       
                     >
                         {page}
                     </button>

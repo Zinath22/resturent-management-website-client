@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Logo from "./Logo";
+// import useAdmin from "../../Hook/useAdmin/useAdmin";
 // import Logo from "../Logo/Logo";
 
 
@@ -24,7 +25,7 @@ const Navbar = () => {
 
 
   const { user, logOut } = useContext(AuthContext)
-
+  // const [isAdmin] = useAdmin();
 
   const handleSignOut = () => {
     logOut()
@@ -47,41 +48,24 @@ const Navbar = () => {
       <li className="text-amber-500">
         <NavLink to="/blog">Blog</NavLink>
       </li>
-      {/* <li className="text-purple-500">
-        <NavLink to = "/register">Register</NavLink>
-    </li> */}
-
-      {/* {
-      user? (
-      <>
-        <li className="text-lime-500">
-          <span className="btn m-2">{user.email}</span>
-        </li>
-        <li className="text-lime-500"
-         onClick={handleSignOut}>
-          <span>Sign Out</span>
-          </li>
-          </>
-       
-      ) : (
-        <li className="text-lime-500">
-          <Link to = "/login">Login</Link>
-        </li>
-      )
-    } */}
+     
       {user ? '' : <li className="text-amber-500">
         <Link to="/login">Login</Link>
       </li>}
+
+      {/* {
+        user && isAdmin && <li><Link to="/dashboard/adminHome">Dashboard</Link></li>
+        
+       } */}
     </>
 
   );
 
   return (
-    <div className="">
-      <div className="rounded-lg flex justify-between items-center py-5 mx-10 px-10 shadow-lg ">
+  //  <>jk</>
+      <div className="rounded-lg w-full flex justify-between items-center   ">
         <Logo></Logo>
-        {/* <img className="w-[60px] rounded-full" src="https://i.ibb.co/ckTTpcX/laura-chouette-bz-PJm3v8-RWk-unsplash-1.jpg" alt="" /> */}
-        {/* <h2 className="text-lime-500 text-2xl hidden md:inline-block" >Resturent</h2> */}
+     
 
         <div className="">
           <div className="navbar ">
@@ -109,7 +93,7 @@ const Navbar = () => {
 
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box "
+                  className="menu menu-sm w-[200px] dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box "
                 >
                   {navLinks}
                 </ul>
@@ -122,10 +106,10 @@ const Navbar = () => {
 
         </div>
         {
-          user ? <> <div className="dropdown dropdown-end">
+          user ? <div> <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src={user.photoURL} />
+                <img src={user.photoURL? user.photoURL : "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
               </div>
             </label>
             <ul tabIndex={0} className="space-y-4 menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -133,12 +117,13 @@ const Navbar = () => {
               <Link to={'/addfood'} ><li>Add Food</li></Link>
               <Link to={'/myAddFoodItem'} ><li>My Add Food</li></Link>
               <Link to={'/myOrder'} ><li>My ordered food</li></Link>
+              {/* <Link to={'/dashboard'} ><li>DashBoard</li></Link> */}
 
               <li onClick={handleSignOut}><a>Logout</a></li>
             </ul>
           </div>
 
-          </> : 
+          </div> :
           ''
           }
 
@@ -156,7 +141,7 @@ const Navbar = () => {
         </label>
       </div>
 
-    </div>
+ 
   );
 };
 

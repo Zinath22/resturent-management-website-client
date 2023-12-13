@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 const Blog = () => {
     return (
-        <div className="px-10 md:py-12 space-y-4">
+        <div className="md:px-10 px-5  py-12 space-y-4">
             <Helmet>
                 <title>FoodLove | Blog</title>
             </Helmet>

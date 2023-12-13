@@ -72,10 +72,7 @@ const Login = () => {
         // const user = { email };
         navigate(location?.state ? location.state : "/");
         // get access token 
-        // axios.post('https://resturent-management-website-server.vercel.app/jwt', user)
-        // .then(res => {
-        //     console.log(res.data);
-        // })
+        
 
       })
       .catch((error) => console.error(error));

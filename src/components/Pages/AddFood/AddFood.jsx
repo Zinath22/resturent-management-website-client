@@ -64,8 +64,8 @@ const AddFood = () => {
             <Helmet>
                 <title>FoodLove | Add Food</title>
             </Helmet>
-            <div className="px-10">
-                <div className="md:w-full rounded-lg my-7 bg-gradient-to-r from-sky-400 to-gray-400 p-24">
+            <div className="md:px-10 px-2">
+                <div className="w-full rounded-lg my-7 bg-gradient-to-r from-sky-400 to-gray-400 md:p-24 px-4">
                     <h2 className="text-3xl text-white justify-center text-center font-extrabold">
                         Add a New Food
                     </h2>
@@ -183,7 +183,8 @@ const AddFood = () => {
                                         type="text"
                                         name="added_by_name"
                                         placeholder="User Name"
-                                        defaultValue={user?.added_by_name}
+                                        defaultValue={user?.displayName
+                                        }
                                         className="input input-bordered text-xl w-full"
                                     />
                                 </label>
