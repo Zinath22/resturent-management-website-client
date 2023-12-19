@@ -2,7 +2,7 @@
  
 
 
- <!-- projects features  -->
+ <!-- projects  features  -->
  
  1.In my website home page we can see 6 top selling card.
 
@@ -13,4 +13,5 @@
  4. In add food page we can add food items using a form.
 
  5. In my added page we can see our purchase food .and we can update this information.
- 6. In my ordered page we can see our added food items and we can delete it.
+ 6. In my ordered page we can see our added food items and total price and we can delete it.
+
