@@ -16,7 +16,7 @@ const AllFoodItemCard = ({item}) => {
                 <h2 className="text-amber-400 card-title" data-aos="flip-left">category: {food_category}</h2>
                 <p className="text-xl text-amber-500" data-aos="flip-left">Price: ${price}</p>
                 <p className="text-xl text-amber-500" data-aos="flip-left">Quantity:{quantity}</p>
-                {/* <p className="text-xl text-orange-500">email: {email}</p> */}
+               
                 
                 <div className="card-actions">
                    
